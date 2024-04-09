@@ -3,6 +3,7 @@ import Sidebar from "./components/Sidebar";
 import TimeframeDropdown from "./components/TimeframeDropdown";
 import InfoBox from "./components/Infobox";
 import MessagePerDayBox from "./components/MessageGraph";
+import BotTable from "./components/BotTable";
 
 const Dashboard: React.FC = () => {
   return (
@@ -14,7 +15,7 @@ const Dashboard: React.FC = () => {
         {/* Analytics dashboard */}
         <h1 className="text-2xl font-bold mt-10 ml-10">Analytics Dashboard</h1>
         {/* grey separator line */}
-        <div className="ml-10 flex justify-start items-center">
+        <div className="ml-10 mr-20 flex justify-start items-center">
           <div className="border-b border-gray-400 flex-1 mt-10"></div>
         </div>
         {/* Timeframe Dropdown */}
@@ -30,8 +31,11 @@ const Dashboard: React.FC = () => {
           </div>
         </div>
         {/* Info box # active bots */}
-        <div className="ml-10 mt-10 flex justify-start items-center">
+        <div className="ml-10 mt-10 flex justify-start">
           <InfoBox title="# Active Bots" value="17" percentChange={-15}/>
+        </div>
+        <div className="ml-10 mt-10 flex">
+          <BotTable />
         </div>
       </div>
     </main>
