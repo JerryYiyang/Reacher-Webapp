@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "./components/Sidebar";
 import Dropdown from "./components/Dropdown";
+import InfoBox from "./components/Infobox";
 
 const Dashboard: React.FC = () => {
   return (
@@ -18,6 +19,14 @@ const Dashboard: React.FC = () => {
         {/* Dropdown */}
         <div className="ml-10 mt-10 flex justify-start items-center">
           <Dropdown />
+        </div>
+        {/* info box # messages sent */}
+        <div className="ml-10 mt-10 flex justify-start items-center">
+          <InfoBox title="# Messages Sent" value="4,989" percentChange={5}/>
+        </div>
+        {/* info box # active bots */}
+        <div className="ml-10 mt-10 flex justify-start items-center">
+          <InfoBox title="# Active Bots" value="17" percentChange={-15}/>
         </div>
       </div>
     </main>
