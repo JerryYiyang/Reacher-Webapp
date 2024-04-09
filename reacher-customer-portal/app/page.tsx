@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "./components/Sidebar";
-import Dropdown from "./components/Dropdown";
+import TimeframeDropdown from "./components/TimeframeDropdown";
 import InfoBox from "./components/Infobox";
 
 const Dashboard: React.FC = () => {
@@ -18,7 +18,7 @@ const Dashboard: React.FC = () => {
         </div>
         {/* Dropdown */}
         <div className="ml-10 mt-10 flex justify-start items-center">
-          <Dropdown />
+          <TimeframeDropdown />
         </div>
         {/* info box # messages sent */}
         <div className="ml-10 mt-10 flex justify-start items-center">
