@@ -15,7 +15,7 @@ const Sidebar: React.FC = () => {
       
       {/* Navigation buttons */}
       <nav className="flex flex-col items-center space-y-4">
-        <Link href="/dashboard" className={`btn py-10px ${pathname === "/dashboard" ? "bg-blue-100" : ""}`}>
+        <Link href="/Dashboard" className={`btn py-10px ${pathname === "./Dashboard/page.tsx" ? "bg-blue-100" : ""}`}>
             Dashboard
         </Link>
         <Link href="/automations" className={`btn py-10px ${pathname === "/automations" ? "bg-blue-100" : ""}`}>

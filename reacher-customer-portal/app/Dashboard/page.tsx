@@ -1,9 +1,7 @@
 import React from "react";
-import Sidebar from "./components/Sidebar";
-import TimeframeDropdown from "./components/TimeframeDropdown";
-import InfoBox from "./components/Infobox";
-
-// no homepage yet so just have dashboard as homepage
+import Sidebar from "../components/Sidebar";
+import TimeframeDropdown from "../components/TimeframeDropdown";
+import InfoBox from "../components/Infobox";
 
 const Dashboard: React.FC = () => {
   return (
