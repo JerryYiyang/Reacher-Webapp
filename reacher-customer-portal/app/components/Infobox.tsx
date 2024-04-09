@@ -14,10 +14,11 @@ const InfoBox: React.FC<InfoBoxProps> = ({ title, value, percentChange }) => {
   const changeText = percentChange >= 0 ? `+${percentChange}% Day Change` : `${percentChange}% Day Change`;
 
   return (
-    <div className="rounded-md border bg-white shadow-md p-4">
+    <div className="rounded-md border bg-white shadow-md p-4"
+    style={{ width: '300px', height: '150px' }}>
       <p className="text-sm text-gray-500 mb-2">{title}</p>
-      <p className="text-2xl font-bold mb-2">{value}</p>
-      <p className={`text-lg font-semibold ${textColor}`}>{changeText}</p>
+      <p className="text-4xl font-bold mb-2">{value}</p>
+      <p className={`text-xs font-semibold ${textColor}`}>{changeText}</p>
     </div>
   );
 };
