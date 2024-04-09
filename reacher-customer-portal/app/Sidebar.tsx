@@ -7,9 +7,9 @@ const Sidebar: React.FC = () => {
   const pathname = router ? router.useRouter().pathname : null;
 
   return (
-    <div className="flex-shrink-0 w-64 bg-white flex flex-col relative shadow-md">
+    <div className="flex-shrink-0 w-64 bg-white flex flex-col relative rounded-r-xl shadow-md">
       {/* Company logo */}
-      <div className="p-4 flex justify-center items-center">
+      <div className="p-4 flex justify-center items-center mt-10">
         <Image src="/reacherlogo.png" alt="Reacher Logo" width={150} height={50} />
       </div>
       
