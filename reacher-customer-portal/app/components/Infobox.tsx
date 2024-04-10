@@ -15,7 +15,7 @@ const InfoBox: React.FC<InfoBoxProps> = ({ title, value, percentChange }) => {
 
   return (
     <div className="rounded-md border bg-white shadow-md p-4"
-    style={{ width: '300px', height: '150px' }}>
+    style={{ width: '300px', height: '140px' }}>
       <p className="text-sm text-gray-500 mb-2">{title}</p>
       <p className="text-4xl font-bold mb-2">{value}</p>
       <p className={`text-xs font-semibold ${textColor}`}>{changeText}</p>

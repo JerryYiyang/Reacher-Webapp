@@ -26,7 +26,7 @@ const Dashboard: React.FC = () => {
         <div className="ml-10 mt-10 flex justify-start">
           <InfoBox title="# Messages Sent" value="4,989" percentChange={5}/>
           {/* Graph displaying messages sent over day(s) */}
-          <div style={{ marginLeft: "300px" }}>
+          <div style={{ marginLeft: "50px" }}>
             <MessagePerDayBox />
           </div>
         </div>
@@ -34,6 +34,7 @@ const Dashboard: React.FC = () => {
         <div className="ml-10 mt-10 flex justify-start">
           <InfoBox title="# Active Bots" value="17" percentChange={-15}/>
         </div>
+        {/* Bot table */}
         <div className="ml-10 mt-10 flex">
           <BotTable />
         </div>
