@@ -12,7 +12,6 @@ const Sidebar: React.FC = () => {
       <div className="p-4 flex justify-center items-center mt-10">
         <Image src="/reacherlogo.png" alt="Reacher Logo" width={150} height={50} />
       </div>
-      
       {/* Navigation buttons */}
       <nav className="flex flex-col items-center space-y-4">
         <Link href="/Dashboard" className={`btn py-10px ${pathname === "./Dashboard/page.tsx" ? "bg-blue-100" : ""}`}>
@@ -22,6 +21,13 @@ const Sidebar: React.FC = () => {
             Automations
         </Link>
       </nav>
+      <div className="mt-20 flex justify-center items-center">
+        <h1>Support</h1>
+      </div>
+      {/* update later to support button clicking */}
+      <div className="p-4 flex justify-center items-center mt-0.0000000000001">
+        <Image src="/reachercontact.png" alt="Reacher Logo" width={150} height={50} />
+      </div>
     </div>
   );
 };

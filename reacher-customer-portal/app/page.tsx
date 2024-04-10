@@ -4,6 +4,7 @@ import TimeframeDropdown from "./components/TimeframeDropdown";
 import InfoBox from "./components/Infobox";
 import MessagePerDayBox from "./components/MessageGraph";
 import BotTable from "./components/BotTable";
+import Download from "./components/Download";
 
 const Dashboard: React.FC = () => {
   return (
@@ -12,8 +13,13 @@ const Dashboard: React.FC = () => {
       <Sidebar />
       {/* Main content */}
       <div className="flex-1 bg-gray-100">
-        {/* Analytics dashboard */}
-        <h1 className="text-2xl font-bold mt-10 ml-10">Analytics Dashboard</h1>
+        {/* Analytics Dashboard text */}
+        <div className="flex items-center justify-between mt-10 ml-10 mr-20">
+          {/* Analytics Dashboard text */}
+          <h1 className="text-2xl font-bold">Analytics Dashboard</h1>
+          {/* Download button */}
+          <Download />
+        </div>
         {/* grey separator line */}
         <div className="ml-10 mr-20 flex justify-start items-center">
           <div className="border-b border-gray-400 flex-1 mt-10"></div>

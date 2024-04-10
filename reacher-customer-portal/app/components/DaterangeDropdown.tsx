@@ -12,10 +12,11 @@ const DaterangeDropdown: React.FC = () => {
 
   return (
     <div>
-      <select className="rounded-lg border bg-white p-2" value={selectedOption} onChange={handleSelectChange}>
-        <option value="today">Daterange: Today</option>
-        <option value="last7days">Daterange: Last 7 Days</option>
-        <option value="lastmonth">Daterange: Last Month</option>
+      <select className="rounded-extra border bg-white p-1"
+      value={selectedOption} onChange={handleSelectChange} style={{ fontSize: '0.875rem' }}>
+        <option value="today">Date Range: Today</option>
+        <option value="last7days">Date Range: Last 7 Days</option>
+        <option value="lastmonth">Date Range: Last Month</option>
       </select>
     </div>
   );

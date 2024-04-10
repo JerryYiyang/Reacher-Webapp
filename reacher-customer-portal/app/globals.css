@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.rounded-extra {
+  border-radius: 2rem;
+}

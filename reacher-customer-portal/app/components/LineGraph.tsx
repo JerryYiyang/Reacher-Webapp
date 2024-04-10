@@ -12,20 +12,21 @@ export default function LineGraph() {
       type: "line" as const,
       data: {
         labels: [
-          "January",
-          "February",
-          "March",
-          "April",
-          "May",
-          "June",
-          "July",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "28",
+          "29",
+          "30"
         ],
         datasets: [
           {
             label: "Messaged Per Day",
             backgroundColor: "#3182ce",
             borderColor: "#3182ce",
-            data: [65, 78, 66, 44, 56, 67, 75],
+            data: [20, 98, 100, 90, 180, 230, 250, 300],
             fill: false,
           }
         ],
